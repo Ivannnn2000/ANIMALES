@@ -1,0 +1,396 @@
+
+
+
+
+.contene{
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+
+}
+
+.bg_animate{
+  width: 100%;
+
+   background: url("fondomar.jpg");
+  position: relative;
+  overflow: hidden;
+}
+
+
+.banner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  
+}
+
+
+/* burbujas */
+
+.burbuja{
+  border-radius: 50%;
+  background: #fff;
+  opacity: .3;
+
+  position: absolute;
+  bottom: -150;
+  
+  animation: burbujas 3s linear infinite ;
+}
+
+.burbuja:nth-child(1){
+  width: 80px;
+  height: 80px;
+  left: 5%;
+  animation-duration: 3s;
+  animation-delay: 3s;
+}
+
+.burbuja:nth-child(2){
+  width: 100px;
+  height: 100px;
+  left: 35%;
+  animation-duration: 3s;
+  animation-delay: 5s;
+}
+
+.burbuja:nth-child(3){
+  width: 20px;
+  height: 20px;
+  left: 15%;
+  animation-duration: 1.5s;
+  animation-delay: 7s;
+}
+
+.burbuja:nth-child(4){
+  width: 50px;
+  height: 50px;
+  left: 90%;
+  animation-duration: 6s;
+  animation-delay: 3s;
+}
+
+.burbuja:nth-child(5){
+  width: 70px;
+  height: 70px;
+  left: 65%;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+.burbuja:nth-child(6){
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  animation-duration: 4s;
+  animation-delay: 5s;
+}
+
+.burbuja:nth-child(7){
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  animation-duration: 4s;
+  animation-delay: 5s;
+}
+
+.burbuja:nth-child(8){
+  width: 100;
+  height: 100px;
+  left: 52%;
+  animation-duration: 5s;
+  animation-delay: 5s;
+}
+
+.burbuja:nth-child(9){
+  width: 65px;
+  height: 65px;
+  left: 51%;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+
+.burbuja:nth-child(10){
+  width: 40px;
+  height: 40px;
+  left: 35%;
+  animation-duration: 3s;
+  animation-delay: 4s;
+}
+
+
+@keyframes burbujas{
+  0%{
+      bottom: 0;
+      opacity: 0;
+  }
+  30%{
+      transform: translateX(30px);
+  }
+  50%{
+      opacity: .4;
+  }
+  100%{
+      bottom: 100vh;
+      opacity: 0;
+  }
+}
+
+@keyframes movimiento{
+  0%{
+      transform: translateY(0);
+  }
+  50%{
+      transform: translateY(30px);
+  }
+  100%{
+      transform: translateY(0);
+  }
+}
+.Imagen {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.Imagen img {
+    width: 100%;
+    max-width: 100%;
+    height:auto;
+}
+.txt{
+    position: absolute;
+   
+}
+.txt h1 {
+    color:#fff;
+    font-family:Comic Sans Ms;
+    margin: 0 auto;
+    font-size: 60px; font-weight: bold;
+    text-align: center;
+    background: #229954 ;
+
+}
+.txt span {
+    background: #229954 ;
+}
+
+.Titulo {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+   
+}
+
+.hijo
+{
+    background:  #1a1b26; 
+    width: 100%;
+    margin: 0 auto;
+    
+}
+.hijo h1 {
+    text-align: center;
+    color:#fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+
+ .button2{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 15px;;
+    color:   #fff;   ;
+    padding: 10px 20px;
+    border: 3px solid #17a2b8;;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 50px;
+    margin-left: 70px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.button2::before,
+.button2::after{
+    content: '';
+    position: absolute;
+    width: 70px;
+    border: inherit;
+    transition: all .5s ease-in;
+}
+
+.button2::before{
+    top: -15px;
+    left: -15px;
+    border-width: 3px 0 0 3px;
+    
+}
+
+
+
+.button2::after{
+    bottom: -15px;
+    right: -15px;
+    border-width: 0 3px 3px 0;
+
+}
+
+.button2:hover::before,
+.button2:hover::after{
+    width: calc(100% + 27px);
+    height: calc(100% + 27px);
+}
+
+h1 {
+    color:#fff;
+    font-family:Comic Sans Ms;
+    margin: 0 auto;
+    font-size: 60px; font-weight: bold;
+    text-align: center;
+ 
+
+}
+.tituloanimales{
+    color:#fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+
+}
+
+
+
+ .leon td, th{
+    
+    border-collapse: collapse;
+    background-color: #a18262;
+    font-size: 20px;
+    text-align: justify; 
+    color: white;
+    font-family:Comic Sans Ms;
+    font-weight: 100;
+
+  }
+  .oso td, th{
+    
+    border-collapse: collapse;
+    background-color: #87CEEB;
+    font-family:Century Gothic; font-size: 20px;
+    text-align: justify; 
+
+  }
+
+  .aguila td, th{
+    
+    border-collapse: collapse;
+    background-color: #B8860B;
+    font-family:Century Gothic; font-size: 20px;
+    text-align: justify; 
+
+  }
+
+  .conejin td {
+   
+    border-collapse: collapse;
+    background-color:  #35ab35;
+    font-family:Century Gothic; font-size: 20px;
+    text-align: justify;
+  }
+
+  .guaca td {
+   
+    border-collapse: collapse;
+    background-color:  	#EC7063 ;
+    font-family:Comic Sans Ms;
+     font-size: 20px;
+    text-align: justify;
+    color:#fff;
+    font-weight: 100;
+  }
+
+  .rino td{
+   
+    border-collapse: collapse;
+    background-color:  		#696969;
+    font-family:Comic Sans Ms;
+     font-size: 20px;
+    text-align: justify;
+    color:#fff;
+    font-weight: 100;
+  
+  }
+
+
+  .elefante td{
+   
+    border-collapse: collapse;
+    background-color: #B8860B;
+    font-family:Comic Sans Ms;
+     font-size: 20px;
+    text-align: justify;
+    color:#fff;
+    font-weight: 100;
+  
+  }
+
+  .tortuga td{
+   
+    border-collapse: collapse;
+    background-color: #48D1CC;
+    font-family:Comic Sans Ms;
+     font-size: 20px;
+    text-align: justify;
+    color:#333;
+    font-weight: 100;
+  
+  }
+  .delfin td{
+   
+    border-collapse: collapse;
+    background-color: #87CEEB;
+    font-family:Comic Sans Ms;
+     font-size: 20px;
+    text-align: justify;
+    color:#333;
+    font-weight: 100;
+  
+  }
+  .tigre td{
+   
+    border-collapse: collapse;
+    background-color: #CD853F;
+    font-family:Comic Sans Ms;
+     font-size: 20px;
+    text-align: justify;
+    color:#333;
+    font-weight: 100;
+  
+  }
+
+  .tibu td{
+   
+    border-collapse: collapse;
+    background-color: #87CEFA;
+    font-family:Comic Sans Ms;
+     font-size: 20px;
+    text-align: justify;
+    color:#333;
+    font-weight: 100;
+  
+  }
+
+
+
+
+
+
+  h2 {
+      font-family: century gothic;
+  }
